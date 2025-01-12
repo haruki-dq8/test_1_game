@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コマンドバトル</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="status-screen" class="border"> <!-- ステータス画面 -->
+            <input type="text" placeholder="なまえ" class="prayer-name">
+            <div id="hp-screen"></div>
+            <div id="mp-screen"></div>
+            <div id="consumption-mp"></div>
+        </div>
+        <div id="start-command" class="border"> <!-- 最初のコマンド -->
+            <ul>
+                <li id="fight-command">たたかう</li>
+                <li id="grades-command">せんせき</li>
+                <li id="explanation-command">せつめい</li>
+                <li id="escape-command">にげる</li>
+            </ul>
+        </div>
+        <div id="battle"> <!-- バトル画面 -->
+            <div class="flex">
+                <div id="battle-command" class="border"> <!-- バトルコマンドの表示 -->
+                    <div class="flex">
+                        <ul>
+                            <li id="commandA">こうげき</li>
+                            <li id="commandB">じゅもん</li>
+                            <li id="commandC">ぼうぎょ</li>
+                        </ul>
+                        <ul>
+                            <li id="commandD">とくぎ</li>
+                            <li id="commandE">どうぐ</li>
+                            <li id="commandF">そうび</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="incantation" class="border"> <!-- じゅもんコマンド -->
+                    <div class="flex">
+                        <ul>
+                            <li id="command1"></li>
+                            <li id="command2"></li>
+                            <li id="command3">？？？？</li>
+                        </ul>
+                        <ul>
+                            <li id="command4"></li>
+                            <li id="command5"></li>
+                            <li id="command6">もどる</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="skill" class="border"> <!-- スキルコマンド -->
+                    <div class="flex">
+                        <ul>
+                            <li id="commandS1"></li>
+                            <li id="commandS2"></li>
+                            <li id="commandS3"></li>
+                        </ul>
+                        <ul>
+                            <li id="commandS4"></li>
+                            <li id="commandS5">？？？？</li>
+                            <li id="commandS6">もどる</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="item" class="border">
+                    <div class="flex">
+                        <ul>
+                            <li id="commandI1">全回復薬</li>
+                            <li id="commandI2"></li>
+                            <li id="commandI3"></li>
+                        </ul>
+                        <ul>
+                            <li id="commandI4"></li>
+                            <li id="commandI5"></li>
+                            <li id="commandI6">もどる</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="enemy"> <!-- 敵の表示 -->
+                    <img alt="enemy" id="enemy-img">
+                    <div id="damage-notation"></div>
+                    <div id="damage-notation2"></div>
+                    <div id="enemy-box" class="border">
+                        <div id="enemy-name"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="war-record" class="border"><!-- せんせき -->
+            <div id="enemy-count">倒した敵の数 : 0</div>
+            <div id="return-record">もどる</div>
+        </div>
+        <div id="explanation" class="border">
+            <ul>
+                <li>乱打武斬 : ダメージをランダムで与える</li>
+                <li>一天強打 : 大ダメージを与える</li>
+                <li>身体強化 : ステータスを上げる</li>
+                <li>リジェラ : 回復する</li>
+                <li>セラム : ブレのないダメージを与える</li>
+                <li>ブースト : 攻撃力を上げる</li>
+                <li>シェル : 防御力を上げる</li>
+            </ul>
+            <div id="return-explanation">もどる</div>
+        </div>
+    </div>
+    <div id="game-over">
+        <p>あなたは倒されました</p>
+        <div id="re-start">リスタート</div>
+    </div>
+</body>
+
+</html>
