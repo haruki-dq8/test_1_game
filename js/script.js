@@ -14,28 +14,28 @@ const screenStatus = { // 表示するステータス
 // 敵ステータス
 const enemies = [
     {
-        image: 'https://github.com/haruki-dq8/test_1_game/blob/main/img/%E7%9B%97%E8%B3%8A%E3%83%95%E3%82%99%E3%83%AB%E3%83%BC.png',
+        image: 'https://github.com/haruki-dq8/test_1_game/raw/main/img/%E7%9B%97%E8%B3%8A%E3%83%95%E3%82%99%E3%83%AB%E3%83%BC.png',
         name: '盗賊',
         hp: 200,
         attack: 50,
         defense: 20
     },
     {
-        image: 'https://github.com/haruki-dq8/test_1_game/blob/main/img/%E5%85%B5%E5%A3%AB%E3%83%95%E3%82%99%E3%83%AB%E3%83%BC.png',
+        image: 'https://github.com/haruki-dq8/test_1_game/raw/main/img/%E5%85%B5%E5%A3%AB%E3%83%95%E3%82%99%E3%83%AB%E3%83%BC.png',
         name: '兵士',
         hp: 300,
         attack: 90,
         defense: 30
     },
     {
-        image: 'https://github.com/haruki-dq8/test_1_game/blob/main/img/%E3%82%BF%E3%82%99%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%881.png',
+        image: 'https://github.com/haruki-dq8/test_1_game/raw/main/img/%E3%82%BF%E3%82%99%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%881.png',
         name: 'ダークナイト',
         hp: 100,
         attack: 90,
         defense: 220
     },
     {
-        image: 'https://github.com/haruki-dq8/test_1_game/blob/main/img/%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E9%AD%94%E7%8E%8B.png',
+        image: 'https://github.com/haruki-dq8/test_1_game/raw/main/img/%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E9%AD%94%E7%8E%8B.png',
         name: '魔王',
         hp: 1400,
         attack: 150,
